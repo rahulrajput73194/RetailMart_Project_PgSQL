@@ -1,7 +1,7 @@
 # 🛒 RetailMart Analytics Dashboard
 
 A comprehensive business intelligence dashboard built with PostgreSQL 16, featuring real-time analytics across Sales, Products, Customers, and Store performance.
-
+**Link to load the dashboard:**http://127.0.0.1:5500/retailmart_analytics_project/03_dashboard/
 ## 📋 **Table of Contents**
 
 - [Prerequisites](#prerequisites)
