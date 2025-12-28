@@ -1,0 +1,64 @@
+[2025-12-28 17:57:38] Starting JSON export process...
+[2025-12-28 17:57:39] WARNING: Refresh flag detected - Refreshing all materialized views...
+  module  |                            view_name                             | status  | execution_time  |        refreshed_at        
+----------+------------------------------------------------------------------+---------+-----------------+----------------------------
+ Sales    | mv_monthly_sales_dashboard, mv_executive_summary                 | SUCCESS | 00:00:01.725409 | 2025-12-28 17:57:50.61729
+ Product  | mv_top_products, mv_abc_analysis                                 | SUCCESS | 00:00:03.324785 | 2025-12-28 17:57:53.944868
+ Customer | mv_customer_lifetime_value, mv_rfm_analysis, mv_cohort_retention | SUCCESS | 00:00:03.257429 | 2025-12-28 17:57:57.202534
+ Store    | mv_store_performance                                             | SUCCESS | 00:00:00.391884 | 2025-12-28 17:57:57.594724
+(4 rows)
+
+[2025-12-28 17:57:57] SUCCESS: All materialized views refreshed successfully!
+[2025-12-28 17:57:58] WARNING: Creating backup of existing files...
+[2025-12-28 17:57:58] SUCCESS: Backup created: ./03_dashboard/data_backup_20251228_175757
+[2025-12-28 17:57:58] INFO: Creating directory structure...
+[2025-12-28 17:57:59] INFO: Created directory: ./03_dashboard/data/sales
+[2025-12-28 17:57:59] INFO: Created directory: ./03_dashboard/data/products
+[2025-12-28 17:57:59] INFO: Created directory: ./03_dashboard/data/customers
+[2025-12-28 17:58:00] INFO: Created directory: ./03_dashboard/data/stores
+[2025-12-28 17:58:00] INFO: Exporting: Executive Summary KPIs
+[2025-12-28 17:58:10] SUCCESS: Exported: ./03_dashboard/data/sales/executive_summary.json
+[2025-12-28 17:58:10] INFO: Exporting: Monthly Sales Trend (12 months)
+[2025-12-28 17:58:15] SUCCESS: Exported: ./03_dashboard/data/sales/monthly_trend.json
+[2025-12-28 17:58:15] INFO: Exporting: Recent 30-Day Trend
+[2025-12-28 17:58:21] SUCCESS: Exported: ./03_dashboard/data/sales/recent_trend.json
+[2025-12-28 17:58:21] INFO: Exporting: Sales by Day of Week
+[2025-12-28 17:58:26] SUCCESS: Exported: ./03_dashboard/data/sales/dayofweek.json
+[2025-12-28 17:58:26] INFO: Exporting: Sales by Payment Mode
+[2025-12-28 17:58:33] ERROR: Failed to export: ./03_dashboard/data/sales/payment_mode.json
+[2025-12-28 17:58:33] INFO: Exporting: Quarterly Sales Performance
+[2025-12-28 17:58:45] SUCCESS: Exported: ./03_dashboard/data/sales/quarterly_sales.json
+[2025-12-28 17:58:45] INFO: Exporting: Weekend vs Weekday Sales
+[2025-12-28 17:58:51] SUCCESS: Exported: ./03_dashboard/data/sales/weekend_weekday.json
+[2025-12-28 17:58:51] INFO: Exporting: Top 20 Products
+[2025-12-28 17:58:57] SUCCESS: Exported: ./03_dashboard/data/products/top_products.json
+[2025-12-28 17:58:57] INFO: Exporting: Category Performance
+[2025-12-28 17:59:05] SUCCESS: Exported: ./03_dashboard/data/products/category_performance.json
+[2025-12-28 17:59:05] INFO: Exporting: Brand Performance (Top 20)
+[2025-12-28 17:59:15] SUCCESS: Exported: ./03_dashboard/data/products/brand_performance.json
+[2025-12-28 17:59:15] INFO: Exporting: ABC Classification
+[2025-12-28 17:59:22] SUCCESS: Exported: ./03_dashboard/data/products/abc_analysis.json
+[2025-12-28 17:59:22] INFO: Exporting: Inventory Status Summary
+[2025-12-28 17:59:28] SUCCESS: Exported: ./03_dashboard/data/products/inventory_status.json
+[2025-12-28 17:59:28] INFO: Exporting: Top 50 Customers by CLV
+[2025-12-28 17:59:34] SUCCESS: Exported: ./03_dashboard/data/customers/top_customers.json
+[2025-12-28 17:59:34] INFO: Exporting: CLV Tier Distribution
+[2025-12-28 17:59:39] SUCCESS: Exported: ./03_dashboard/data/customers/clv_distribution.json
+[2025-12-28 17:59:39] INFO: Exporting: RFM Customer Segments
+[2025-12-28 17:59:44] SUCCESS: Exported: ./03_dashboard/data/customers/rfm_segments.json
+[2025-12-28 17:59:44] INFO: Exporting: Churn Risk Analysis
+[2025-12-28 17:59:50] SUCCESS: Exported: ./03_dashboard/data/customers/churn_risk.json
+[2025-12-28 17:59:50] INFO: Exporting: Customer Demographics
+[2025-12-28 17:59:54] SUCCESS: Exported: ./03_dashboard/data/customers/demographics.json
+[2025-12-28 17:59:55] INFO: Exporting: Geographic Distribution (Top 50)
+[2025-12-28 17:59:59] SUCCESS: Exported: ./03_dashboard/data/customers/geography.json
+[2025-12-28 17:59:59] INFO: Exporting: Top 20 Stores
+[2025-12-28 18:00:03] SUCCESS: Exported: ./03_dashboard/data/stores/top_stores.json
+[2025-12-28 18:00:03] INFO: Exporting: Regional Performance Summary
+[2025-12-28 18:00:07] SUCCESS: Exported: ./03_dashboard/data/stores/regional_performance.json
+[2025-12-28 18:00:07] INFO: Exporting: Store Inventory Health
+[2025-12-28 18:00:12] SUCCESS: Exported: ./03_dashboard/data/stores/store_inventory.json
+[2025-12-28 18:00:12] INFO: Exporting: Employee Distribution by Store
+[2025-12-28 18:00:17] SUCCESS: Exported: ./03_dashboard/data/stores/employee_distribution.json
+[2025-12-28 18:00:17] SUCCESS: All JSON files exported successfully!
+[2025-12-28 18:00:17] JSON export process completed successfully
